@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard AI - Scam Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-icon">🛡️</div>
+        <div>
+          <h1 class="brand-title">PhishGuard AI</h1>
+          <span class="brand-subtitle">Real-Time Threat Protection</span>
+        </div>
+      </div>
+      <div class="status-pill active">
+        <span class="pulse-dot"></span> LIVE
+      </div>
+    </header>
+
+    <!-- Loading State -->
+    <div id="loading-state" class="state-panel">
+      <div class="spinner"></div>
+      <p>Analyzing website safety with AI & Threat Intel...</p>
+    </div>
+
+    <!-- Main Content Panel -->
+    <div id="main-state" class="state-panel hidden">
+      <!-- Risk Score Card -->
+      <div id="risk-card" class="risk-card card-safe">
+        <div class="score-container">
+          <div class="score-ring">
+            <span id="score-val">0%</span>
+            <span class="score-lbl">RISK INDEX</span>
+          </div>
+        </div>
+        <div class="risk-details">
+          <div class="domain-name" id="current-domain">example.com</div>
+          <div class="risk-badge" id="risk-badge">SAFE</div>
+        </div>
+      </div>
+
+      <!-- Threat Indicators Breakdown -->
+      <div class="section-title">Threat Intelligence Breakdown</div>
+      <div class="indicators-grid">
+        <div class="indicator-item" id="ind-domain">
+          <span class="ind-icon">🌐</span>
+          <div class="ind-info">
+            <span class="ind-label">Domain Reputation</span>
+            <span class="ind-status" id="status-domain">Clean</span>
+          </div>
+        </div>
+        <div class="indicator-item" id="ind-login">
+          <span class="ind-icon">🔑</span>
+          <div class="ind-info">
+            <span class="ind-label">Login Form Security</span>
+            <span class="ind-status" id="status-login">Safe</span>
+          </div>
+        </div>
+        <div class="indicator-item" id="ind-store">
+          <span class="ind-icon">🛍️</span>
+          <div class="ind-info">
+            <span class="ind-label">Fake Deal Signals</span>
+            <span class="ind-status" id="status-store">None</span>
+          </div>
+        </div>
+        <div class="indicator-item" id="ind-ml">
+          <span class="ind-icon">🤖</span>
+          <div class="ind-info">
+            <span class="ind-label">ML Phishing Model</span>
+            <span class="ind-status" id="status-ml">0% Prob.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Explanation Section -->
+      <div class="ai-box">
+        <div class="ai-header">
+          <span>🤖 AI Security Explanation</span>
+          <span class="ai-model-tag">Gemini AI</span>
+        </div>
+        <p class="ai-summary" id="ai-summary">Analyzing...</p>
+        <ul class="ai-reasons" id="ai-reasons"></ul>
+        <div class="ai-recommendation" id="ai-recommendation"></div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="actions-grid">
+        <button id="btn-rescan" class="btn btn-secondary">
+          <span>🔄</span> Re-Scan
+        </button>
+        <button id="btn-highlight" class="btn btn-warning">
+          <span>🔴</span> Scan Links
+        </button>
+        <button id="btn-report" class="btn btn-danger">
+          <span>🚨</span> Report Scam
+        </button>
+      </div>
+      
+      <div class="footer-link">
+        <a href="http://localhost:5000" target="_blank" id="open-dashboard-link">Open Security Dashboard ↗</a>
+      </div>
+    </div>
+
+    <!-- Report Scam Modal -->
+    <div id="report-modal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>🚨 Report Scam Website</h3>
+          <button id="close-modal" class="close-btn">&times;</button>
+        </div>
+        <form id="report-form">
+          <label>Target Domain:</label>
+          <input type="text" id="report-domain" readonly>
+          
+          <label>Scam Category:</label>
+          <select id="report-category" required>
+            <option value="Fake E-Commerce Store">Fake E-Commerce Store</option>
+            <option value="Credential Harvesting / Phishing">Credential Harvesting / Phishing</option>
+            <option value="Crypto Wallet Drainer">Crypto Wallet Drainer</option>
+            <option value="Tech Support / Impersonation Scam">Tech Support Scam</option>
+            <option value="Other Malicious Site">Other Malicious Site</option>
+          </select>
+          
+          <label>Details / Description:</label>
+          <textarea id="report-desc" rows="3" placeholder="Describe the scam or phishing behavior..."></textarea>
+          
+          <button type="submit" class="btn btn-danger btn-full">Submit Report & Blacklist</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

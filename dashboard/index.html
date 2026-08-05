@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard AI - Threat Intelligence Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Top Navbar -->
+    <header class="navbar">
+      <div class="nav-brand">
+        <span class="nav-logo">🛡️</span>
+        <div>
+          <h1 class="nav-title">PhishGuard AI</h1>
+          <span class="nav-subtitle">Cybersecurity Command & Threat Intelligence Center</span>
+        </div>
+      </div>
+      <div class="nav-stats">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> API Status: <strong id="api-status">Connecting...</strong>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Dashboard Container -->
+    <main class="main-content">
+      <!-- Live URL Scanner Sandbox -->
+      <section class="scanner-section">
+        <div class="section-header">
+          <h2>🔍 AI-Powered URL Threat Sandbox Scanner</h2>
+          <p>Scan any website URL in real-time to analyze domain heuristics, ML phishing probability, and threat intelligence.</p>
+        </div>
+        <form id="scan-form" class="scan-bar">
+          <input type="text" id="scan-url-input" placeholder="Enter URL or domain (e.g. amazon-shop-sale.xyz, facebook.com, http://login-verify.top)" required>
+          <button type="submit" class="btn-scan">
+            <span>⚡ Run AI Scan</span>
+          </button>
+        </form>
+
+        <!-- Scan Result Card -->
+        <div id="scan-result-card" class="result-card hidden">
+          <div class="result-header">
+            <div class="result-domain">
+              <span id="res-hostname">amazon-shop-sale.xyz</span>
+              <span id="res-badge" class="badge-danger">CRITICAL SCAM</span>
+            </div>
+            <div class="result-score-ring">
+              <span id="res-score">92%</span>
+              <span class="ring-lbl">RISK SCORE</span>
+            </div>
+          </div>
+
+          <div class="result-body-grid">
+            <!-- AI Explanation -->
+            <div class="res-box res-ai-box">
+              <h3>🤖 Gemini AI Threat Analysis</h3>
+              <p id="res-ai-summary" class="summary-text"></p>
+              <ul id="res-ai-reasons" class="reasons-list"></ul>
+              <div id="res-ai-rec" class="recommendation-box"></div>
+            </div>
+
+            <!-- Technical Vectors -->
+            <div class="res-box res-tech-box">
+              <h3>⚡ Security Vectors & Intel</h3>
+              <div class="tech-metric">
+                <span>Domain Heuristics Flags</span>
+                <strong id="res-heuristic-count">0 Flags</strong>
+              </div>
+              <div class="tech-metric">
+                <span>ML Phishing Probability</span>
+                <strong id="res-ml-prob">0%</strong>
+              </div>
+              <div class="tech-metric">
+                <span>VirusTotal Malicious Detections</span>
+                <strong id="res-vt-count">0 / 72 Vendors</strong>
+              </div>
+              <div class="tech-metric">
+                <span>Google Safe Browsing</span>
+                <strong id="res-gsb-status">CLEAN</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Metrics Row -->
+      <section class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon blue">📡</div>
+          <div class="metric-data">
+            <span class="metric-val" id="stat-total-scans">1,420</span>
+            <span class="metric-label">Total Websites Scanned</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon red">🚨</div>
+          <div class="metric-data">
+            <span class="metric-val" id="stat-critical-scams">312</span>
+            <span class="metric-label">Critical Scams Blocked</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon amber">⚠️</div>
+          <div class="metric-data">
+            <span class="metric-val" id="stat-warnings">458</span>
+            <span class="metric-label">Phishing Warnings Issued</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon purple">👥</div>
+          <div class="metric-data">
+            <span class="metric-val" id="stat-community-reports">2</span>
+            <span class="metric-label">Community Scam Reports</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Two Column Grid -->
+      <div class="content-grid">
+        <!-- Column 1: Scans Feed -->
+        <div class="grid-col">
+          <div class="card-header">
+            <h3>Recent Scanned Websites Log</h3>
+            <span class="badge-neutral">Real-Time Feed</span>
+          </div>
+          <div class="scans-list" id="scans-list">
+            <!-- Dynamic scan items inserted here -->
+          </div>
+        </div>
+
+        <!-- Column 2: Community Scam Reports -->
+        <div class="grid-col">
+          <div class="card-header">
+            <h3>Community Scam Reports & Blacklist</h3>
+            <span class="badge-danger">Active Blacklist</span>
+          </div>
+          <div class="reports-list" id="reports-list">
+            <!-- Dynamic report items inserted here -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>PhishGuard AI Cybersecurity Suite &bull; Built with Chrome Extension API + Express + Gemini AI Engine</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

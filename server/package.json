@@ -1,0 +1,13 @@
+{
+  "name": "browser-scam-detector-server",
+  "version": "1.0.0",
+  "description": "Backend API for Real-Time AI Browser Extension Scam & Phishing Detector",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

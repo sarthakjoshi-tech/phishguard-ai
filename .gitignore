@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+server/node_modules/
+package-lock.json
+
+# Environment variables & secrets
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Scratch & build cache
+scratch/
+.cache/
