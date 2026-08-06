@@ -1,6 +1,738 @@
 {
   "scans": [
     {
+      "url": "http://amazon-shop-sale.xyz/",
+      "hostname": "amazon-shop-sale.xyz",
+      "title": "amazon-shop-sale.xyz",
+      "timestamp": "2026-08-05T20:11:00.447Z",
+      "score": 98,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 98,
+        "flags": [
+          "Domain is listed on active scam blacklist.",
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale].",
+          "Domain contains multiple hyphens (2), a common tactic in counterfeit domains."
+        ],
+        "entropy": 3.33,
+        "hostname": "amazon-shop-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 67,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 28,
+          "hostname_length": 20,
+          "dot_count": 1,
+          "hyphen_count": 2,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 28,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-shop-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "MALICIOUS / PHISHING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 98,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Domain is listed on active scam blacklist.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale].",
+          "• Domain contains multiple hyphens (2), a common tactic in counterfeit domains.",
+          "• Threat Intelligence Match: Flagged by 28/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-shop-sale.xyz/",
+      "hostname": "amazon-shop-sale.xyz",
+      "title": "amazon-shop-sale.xyz",
+      "timestamp": "2026-08-05T20:10:58.098Z",
+      "score": 98,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 98,
+        "flags": [
+          "Domain is listed on active scam blacklist.",
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale].",
+          "Domain contains multiple hyphens (2), a common tactic in counterfeit domains."
+        ],
+        "entropy": 3.33,
+        "hostname": "amazon-shop-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 67,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 28,
+          "hostname_length": 20,
+          "dot_count": 1,
+          "hyphen_count": 2,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 28,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-shop-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "MALICIOUS / PHISHING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 98,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Domain is listed on active scam blacklist.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale].",
+          "• Domain contains multiple hyphens (2), a common tactic in counterfeit domains.",
+          "• Threat Intelligence Match: Flagged by 28/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "chrome://newtab/",
+      "hostname": "newtab",
+      "title": "New Tab",
+      "timestamp": "2026-08-05T19:57:13.252Z",
+      "score": 9,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.58,
+        "hostname": "newtab",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 9,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 16,
+          "hostname_length": 6,
+          "dot_count": 0,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/newtab"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 9,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (9% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.facebook.com/",
+      "hostname": "www.facebook.com",
+      "title": "Facebook",
+      "timestamp": "2026-08-05T19:38:04.801Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.75,
+        "hostname": "www.facebook.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 25,
+          "hostname_length": 16,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/www.facebook.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.facebook.com/",
+      "hostname": "www.facebook.com",
+      "title": "www.facebook.com",
+      "timestamp": "2026-08-05T19:37:58.705Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.75,
+        "hostname": "www.facebook.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 25,
+          "hostname_length": 16,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/www.facebook.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-shop-sale.xyz/",
+      "hostname": "amazon-shop-sale.xyz",
+      "title": "amazon-shop-sale.xyz",
+      "timestamp": "2026-08-05T19:37:16.431Z",
+      "score": 98,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 98,
+        "flags": [
+          "Domain is listed on active scam blacklist.",
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale].",
+          "Domain contains multiple hyphens (2), a common tactic in counterfeit domains."
+        ],
+        "entropy": 3.33,
+        "hostname": "amazon-shop-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 67,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 28,
+          "hostname_length": 20,
+          "dot_count": 1,
+          "hyphen_count": 2,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 28,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-shop-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "MALICIOUS / PHISHING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 98,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Domain is listed on active scam blacklist.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale].",
+          "• Domain contains multiple hyphens (2), a common tactic in counterfeit domains.",
+          "• Threat Intelligence Match: Flagged by 28/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-shop-sale.xyz/",
+      "hostname": "amazon-shop-sale.xyz",
+      "title": "amazon-shop-sale.xyz",
+      "timestamp": "2026-08-05T19:37:08.305Z",
+      "score": 98,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 98,
+        "flags": [
+          "Domain is listed on active scam blacklist.",
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale].",
+          "Domain contains multiple hyphens (2), a common tactic in counterfeit domains."
+        ],
+        "entropy": 3.33,
+        "hostname": "amazon-shop-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 67,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 28,
+          "hostname_length": 20,
+          "dot_count": 1,
+          "hyphen_count": 2,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 28,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-shop-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "MALICIOUS / PHISHING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 98,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Domain is listed on active scam blacklist.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale].",
+          "• Domain contains multiple hyphens (2), a common tactic in counterfeit domains.",
+          "• Threat Intelligence Match: Flagged by 28/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-shop-sale.xyz/",
+      "hostname": "amazon-shop-sale.xyz",
+      "title": "amazon-shop-sale.xyz",
+      "timestamp": "2026-08-05T19:37:04.521Z",
+      "score": 98,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 98,
+        "flags": [
+          "Domain is listed on active scam blacklist.",
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale].",
+          "Domain contains multiple hyphens (2), a common tactic in counterfeit domains."
+        ],
+        "entropy": 3.33,
+        "hostname": "amazon-shop-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 67,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 28,
+          "hostname_length": 20,
+          "dot_count": 1,
+          "hyphen_count": 2,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 28,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-shop-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "MALICIOUS / PHISHING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 98,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Domain is listed on active scam blacklist.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale].",
+          "• Domain contains multiple hyphens (2), a common tactic in counterfeit domains.",
+          "• Threat Intelligence Match: Flagged by 28/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-2043528807%3A1785958048676189&client_id=1078992815106-brpsupgvhheqg35tupphbh0qk9c32nq8.apps.googleusercontent.com&code_challenge=XyB2_gptZM09LHHuh0qonrvp4K0qEnCebrlX3h5VPoU&code_challenge_method=S256&nonce=699d5557339aea50ec16cb0438da6d32&o2v=2&prompt=select_account&redirect_uri=https%3A%2F%2Fgithub.com%2Fsessions%2Fsocial%2Fgoogle%2Fcallback&response_type=code&scope=openid+email+profile&service=lso&state=ad4129e0eae102c395802b9b0372aa39&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAO2TQUlE9cgFKtvA3z1dUbzEmRYEbxmmEUaCGcbY-_pBEvclX5_e6s75lSNCunay-ghtcTKa1E60T_g_WgJRjYnjJ-jcu6eYkLcZAaHhoRDJRLh4OVnBxjUdaYrSTJyfkRnHfLdH85Z01SLfAi8rxf4Y6dmxggwS4Sw_moee7eI4kFKSt6AzVIyPEcFy5ROovIjAadkwB8QR5d6hotOdn0JWTTNlI6GieR9unH03e3plMnHqAmFchiwCqU2JzDVcsbhEfL0OkXZX4QFZjwEtFB7nhHvs3DYVyCsl-cXDEfN2ipef8sonJSGEuOh3WHta8ekN5UXgRECzoVf_Ito247xBlFVK4ZIHLAa5X3P4Tn_tb-rCVdKFpuvvrzVi2-0wdFV9tb6AD0T3wJywvyZu0MLhsrCx8kV8-q2Q5vNByI9QB2RLulXGDC9w12dn9BLczbPCW_a5lzrU37D-945Q0Lh96XP8A%26flowName%3DGeneralOAuthFlow%26as%3DS-2043528807%253A1785958048676189%26client_id%3D1078992815106-brpsupgvhheqg35tupphbh0qk9c32nq8.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fgithub.com&rart=ANgoxcfHhDMtCcx6amQsP4peq7R1FVnEWZJdQYBaWrQuHJc8wYrkKIRfAk8Z1Mv8_O-tDf4RNlR6mlT7Uao_oQ5ZGMgCR0kO7Jv_FmIUemXD-4gyEVxEngw",
+      "hostname": "accounts.google.com",
+      "title": "Sign in - Google Accounts",
+      "timestamp": "2026-08-05T19:27:40.259Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 60,
+        "flags": [
+          "Brand spoofing detected: Domain contains brand keyword \"google\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [signin, account]."
+        ],
+        "entropy": 1.92,
+        "hostname": "accounts.google.com",
+        "brandSpoofed": "google"
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 1493,
+          "hostname_length": 19,
+          "dot_count": 12,
+          "hyphen_count": 0,
+          "symbol_count": 90,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/accounts.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be GOOGLE to deceive users.",
+          "• Unsecured Login Trap: Contains password collection fields on an unverified, untrusted domain.",
+          "• Brand spoofing detected: Domain contains brand keyword \"google\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [signin, account]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-2043528807%3A1785958048676189&client_id=1078992815106-brpsupgvhheqg35tupphbh0qk9c32nq8.apps.googleusercontent.com&code_challenge=XyB2_gptZM09LHHuh0qonrvp4K0qEnCebrlX3h5VPoU&code_challenge_method=S256&nonce=699d5557339aea50ec16cb0438da6d32&o2v=2&prompt=select_account&redirect_uri=https%3A%2F%2Fgithub.com%2Fsessions%2Fsocial%2Fgoogle%2Fcallback&response_type=code&scope=openid+email+profile&service=lso&state=ad4129e0eae102c395802b9b0372aa39&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAO2TQUlE9cgFKtvA3z1dUbzEmRYEbxmmEUaCGcbY-_pBEvclX5_e6s75lSNCunay-ghtcTKa1E60T_g_WgJRjYnjJ-jcu6eYkLcZAaHhoRDJRLh4OVnBxjUdaYrSTJyfkRnHfLdH85Z01SLfAi8rxf4Y6dmxggwS4Sw_moee7eI4kFKSt6AzVIyPEcFy5ROovIjAadkwB8QR5d6hotOdn0JWTTNlI6GieR9unH03e3plMnHqAmFchiwCqU2JzDVcsbhEfL0OkXZX4QFZjwEtFB7nhHvs3DYVyCsl-cXDEfN2ipef8sonJSGEuOh3WHta8ekN5UXgRECzoVf_Ito247xBlFVK4ZIHLAa5X3P4Tn_tb-rCVdKFpuvvrzVi2-0wdFV9tb6AD0T3wJywvyZu0MLhsrCx8kV8-q2Q5vNByI9QB2RLulXGDC9w12dn9BLczbPCW_a5lzrU37D-945Q0Lh96XP8A%26flowName%3DGeneralOAuthFlow%26as%3DS-2043528807%253A1785958048676189%26client_id%3D1078992815106-brpsupgvhheqg35tupphbh0qk9c32nq8.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fgithub.com&rart=ANgoxcfHhDMtCcx6amQsP4peq7R1FVnEWZJdQYBaWrQuHJc8wYrkKIRfAk8Z1Mv8_O-tDf4RNlR6mlT7Uao_oQ5ZGMgCR0kO7Jv_FmIUemXD-4gyEVxEngw",
+      "hostname": "accounts.google.com",
+      "title": "accounts.google.com",
+      "timestamp": "2026-08-05T19:27:32.218Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 60,
+        "flags": [
+          "Brand spoofing detected: Domain contains brand keyword \"google\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [signin, account]."
+        ],
+        "entropy": 1.92,
+        "hostname": "accounts.google.com",
+        "brandSpoofed": "google"
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 1493,
+          "hostname_length": 19,
+          "dot_count": 12,
+          "hyphen_count": 0,
+          "symbol_count": 90,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-05",
+          "permalink": "https://www.virustotal.com/gui/search/accounts.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be GOOGLE to deceive users.",
+          "• Brand spoofing detected: Domain contains brand keyword \"google\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [signin, account]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://github.com/sessions/social/google/initiate?return_to=https%3A%2F%2Fgithub.com%2Fnew&disable_signup=false",
+      "hostname": "github.com",
+      "title": "github.com",
+      "timestamp": "2026-08-05T19:27:29.808Z",
+      "score": 0,
+      "riskRating": "SAFE",
+      "aiExplanation": {
+        "compositeScore": 0,
+        "riskRating": "SAFE",
+        "summary": "✅ Verified Trusted Domain: Official domain signature confirmed.",
+        "keyReasons": [
+          "• Verified global brand domain.",
+          "• Passed all threat intelligence databases."
+        ],
+        "recommendation": "Safe for secure browsing and transactions."
+      },
+      "mlClassification": {
+        "phishingProbability": 0,
+        "confidenceRating": "Verified Whitelisted"
+      },
+      "threatIntel": {
+        "threatLevel": "SAFE",
+        "virusTotal": {
+          "positives": 0,
+          "total": 72
+        }
+      }
+    },
+    {
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnew",
+      "hostname": "github.com",
+      "title": "github.com",
+      "timestamp": "2026-08-05T19:27:27.309Z",
+      "score": 0,
+      "riskRating": "SAFE",
+      "aiExplanation": {
+        "compositeScore": 0,
+        "riskRating": "SAFE",
+        "summary": "✅ Verified Trusted Domain: Official domain signature confirmed.",
+        "keyReasons": [
+          "• Verified global brand domain.",
+          "• Passed all threat intelligence databases."
+        ],
+        "recommendation": "Safe for secure browsing and transactions."
+      },
+      "mlClassification": {
+        "phishingProbability": 0,
+        "confidenceRating": "Verified Whitelisted"
+      },
+      "threatIntel": {
+        "threatLevel": "SAFE",
+        "virusTotal": {
+          "positives": 0,
+          "total": 72
+        }
+      }
+    },
+    {
       "url": "https://www.youtube.com/",
       "hostname": "www.youtube.com",
       "title": "YouTube",

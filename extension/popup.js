@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (err) {
       console.warn("Backend API unavailable, executing client fallback scan:", err);
-      // Client-side fallback calculation if API server is offline
       currentScanData = performClientFallbackScan(tabUrl, domain, domMetadata);
       renderScanResults(currentScanData);
     } finally {
@@ -108,7 +107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       riskCard.classList.add("card-safe");
     }
 
-    // Set Indicators
+    // Set Domain Status
     if (data.heuristics && data.heuristics.flags.length > 0) {
       statusDomain.textContent = `${data.heuristics.flags.length} Flags`;
       statusDomain.style.color = "#f59e0b";
@@ -117,22 +116,31 @@ document.addEventListener('DOMContentLoaded', async () => {
       statusDomain.style.color = "#10b981";
     }
 
+    // Set Login Form / Phishing Status
     if (domMetadata.hasPasswordInput) {
-      statusLogin.textContent = "Detected";
+      statusLogin.textContent = domMetadata.isFormMismatch ? "Phishing Trap" : "Password Field";
       statusLogin.style.color = domMetadata.isFormMismatch ? "#ef4444" : "#f59e0b";
+    } else if (data.heuristics && data.heuristics.brandSpoofed) {
+      statusLogin.textContent = "Brand Spoofed";
+      statusLogin.style.color = "#ef4444";
     } else {
-      statusLogin.textContent = "Safe";
+      statusLogin.textContent = "No Form";
       statusLogin.style.color = "#10b981";
     }
 
+    // Set Fake Store Status
     if (domMetadata.hasFakeDiscount) {
-      statusStore.textContent = "Suspicious";
+      statusStore.textContent = "Fake Discount";
       statusStore.style.color = "#ef4444";
+    } else if (data.heuristics && data.heuristics.flags.some(f => f.includes("sale") || f.includes("90-off"))) {
+      statusStore.textContent = "Scam Keyword";
+      statusStore.style.color = "#f59e0b";
     } else {
       statusStore.textContent = "None";
       statusStore.style.color = "#10b981";
     }
 
+    // Set ML Probability
     if (data.mlClassification) {
       statusMl.textContent = `${data.mlClassification.phishingProbability}% Prob.`;
       statusMl.style.color = data.mlClassification.phishingProbability > 50 ? "#ef4444" : "#10b981";
@@ -157,7 +165,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       hostname: domain,
       score,
       riskRating,
-      heuristics: { flags: isPhishDomain ? ["High-risk TLD or brand keyword detected."] : [] },
+      heuristics: { flags: isPhishDomain ? ["High-risk TLD or brand keyword detected."] : [], brandSpoofed: domain.includes("amazon") ? "amazon" : null },
       mlClassification: { phishingProbability: score },
       aiExplanation: {
         summary: score >= 80 ? "⚠️ High Risk Phishing Site" : "✅ Normal Web Page",
