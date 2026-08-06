@@ -1,6 +1,880 @@
 {
   "scans": [
     {
+      "url": "https://www.researchgate.net/publication/260126665_A_Study_Of_Cyber_Security_Challenges_And_Its_Emerging_Trends_On_Latest_Technologies?__cf_chl_tk=3Shuyt4lEXWvDuK9u4TNpW.XBZO3k.tJo5HvMgMNcgg-1786039588-1.0.1.1-Ifwlbly4PYKT_FSg_8N0PGngS33mCJS3fkYTw94lXl4",
+      "hostname": "www.researchgate.net",
+      "title": "(PDF) A Study Of Cyber Security Challenges And Its Emerging Trends On Latest Technologies",
+      "timestamp": "2026-08-06T18:07:04.925Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "entropy": 2.86,
+        "hostname": "www.researchgate.net",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 253,
+          "hostname_length": 20,
+          "dot_count": 7,
+          "hyphen_count": 0,
+          "symbol_count": 21,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.researchgate.net"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Unsecured Login Trap: Contains password collection fields on an unverified, untrusted domain.",
+          "• URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.researchgate.net/publication/260126665_A_Study_Of_Cyber_Security_Challenges_And_Its_Emerging_Trends_On_Latest_Technologies?__cf_chl_tk=3Shuyt4lEXWvDuK9u4TNpW.XBZO3k.tJo5HvMgMNcgg-1786039588-1.0.1.1-Ifwlbly4PYKT_FSg_8N0PGngS33mCJS3fkYTw94lXl4",
+      "hostname": "www.researchgate.net",
+      "title": "www.researchgate.net",
+      "timestamp": "2026-08-06T18:06:46.673Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "entropy": 2.86,
+        "hostname": "www.researchgate.net",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 253,
+          "hostname_length": 20,
+          "dot_count": 7,
+          "hyphen_count": 0,
+          "symbol_count": 21,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.researchgate.net"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.researchgate.net/publication/260126665_A_Study_Of_Cyber_Security_Challenges_And_Its_Emerging_Trends_On_Latest_Technologies",
+      "hostname": "www.researchgate.net",
+      "title": "www.researchgate.net",
+      "timestamp": "2026-08-06T18:06:33.207Z",
+      "score": 52,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "entropy": 2.86,
+        "hostname": "www.researchgate.net",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 52,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 134,
+          "hostname_length": 20,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 13,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.researchgate.net"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 52,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://journal.cisse.info/jcisse",
+      "hostname": "journal.cisse.info",
+      "title": "journal.cisse.info",
+      "timestamp": "2026-08-06T18:06:12.263Z",
+      "score": 25,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 25,
+        "flags": [
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites."
+        ],
+        "entropy": 1.92,
+        "hostname": "journal.cisse.info",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 21,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 33,
+          "hostname_length": 18,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/journal.cisse.info"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 25,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (21% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://journal.cisse.info/jcisse",
+      "hostname": "journal.cisse.info",
+      "title": "Journal of The Colloquium for Information Systems Security Education",
+      "timestamp": "2026-08-06T18:06:11.166Z",
+      "score": 25,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 25,
+        "flags": [
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites."
+        ],
+        "entropy": 1.92,
+        "hostname": "journal.cisse.info",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 21,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 33,
+          "hostname_length": 18,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/journal.cisse.info"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 25,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (21% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=cyber+security+research+papers&oq=cyber+security+rese&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjE2NzEyajBqMTWoAgiwAgHxBUjetlrasNTg8QVI3rZa2rDU4A&sourceid=chrome&source=chrome.rb&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "cyber security research papers - Google Search",
+      "timestamp": "2026-08-06T18:05:39.103Z",
+      "score": 52,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 52,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 330,
+          "hostname_length": 14,
+          "dot_count": 3,
+          "hyphen_count": 0,
+          "symbol_count": 13,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 52,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research",
+      "hostname": "www.sans.edu",
+      "title": "www.sans.edu",
+      "timestamp": "2026-08-06T18:05:08.072Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 35,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research",
+      "hostname": "www.sans.edu",
+      "title": "Cybersecurity Research Papers | SANS Technology Institute",
+      "timestamp": "2026-08-06T18:05:08.044Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 35,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=cyber+security+research+papers&oq=cyber+security+rese&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjE2NzEyajBqMTWoAgiwAgHxBUjetlrasNTg8QVI3rZa2rDU4A&sourceid=chrome&source=chrome.rb&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-08-06T18:04:58.113Z",
+      "score": 52,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 52,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 330,
+          "hostname_length": 14,
+          "dot_count": 3,
+          "hyphen_count": 0,
+          "symbol_count": 13,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 52,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "chrome://newtab/",
+      "hostname": "newtab",
+      "title": "New Tab",
+      "timestamp": "2026-08-06T18:04:01.673Z",
+      "score": 9,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.58,
+        "hostname": "newtab",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 9,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 16,
+          "hostname_length": 6,
+          "dot_count": 0,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/newtab"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 9,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (9% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "chrome://newtab/",
+      "hostname": "newtab",
+      "title": "New Tab",
+      "timestamp": "2026-08-06T18:02:07.035Z",
+      "score": 9,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.58,
+        "hostname": "newtab",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 9,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 16,
+          "hostname_length": 6,
+          "dot_count": 0,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/newtab"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 9,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (9% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-sale.xyz/",
+      "hostname": "amazon-sale.xyz",
+      "title": "amazon-sale.xyz",
+      "timestamp": "2026-08-06T17:11:47.177Z",
+      "score": 90,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 90,
+        "flags": [
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale]."
+        ],
+        "entropy": 3.03,
+        "hostname": "amazon-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 40,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 23,
+          "hostname_length": 15,
+          "dot_count": 1,
+          "hyphen_count": 1,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 90,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-sale.xyz/",
+      "hostname": "amazon-sale.xyz",
+      "title": "amazon-sale.xyz",
+      "timestamp": "2026-08-06T17:11:42.087Z",
+      "score": 90,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 90,
+        "flags": [
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale]."
+        ],
+        "entropy": 3.03,
+        "hostname": "amazon-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 40,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 23,
+          "hostname_length": 15,
+          "dot_count": 1,
+          "hyphen_count": 1,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 90,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "http://amazon-sale.xyz/",
+      "hostname": "amazon-sale.xyz",
+      "title": "amazon-sale.xyz",
+      "timestamp": "2026-08-06T17:10:28.076Z",
+      "score": 90,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 90,
+        "flags": [
+          "Unencrypted connection (HTTP instead of HTTPS).",
+          "Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "URL contains security/phishing high-risk keywords: [sale]."
+        ],
+        "entropy": 3.03,
+        "hostname": "amazon-sale.xyz",
+        "brandSpoofed": "amazon"
+      },
+      "mlClassification": {
+        "phishingProbability": 40,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 23,
+          "hostname_length": 15,
+          "dot_count": 1,
+          "hyphen_count": 1,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 1,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-06",
+          "permalink": "https://www.virustotal.com/gui/search/amazon-sale.xyz"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 90,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Brand Impersonation: This domain is falsely pretending to be AMAZON to deceive users.",
+          "• Unencrypted connection (HTTP instead of HTTPS).",
+          "• Uses high-risk Top-Level Domain (TLD) commonly associated with disposable scam sites.",
+          "• Brand spoofing detected: Domain contains brand keyword \"amazon\" on an unofficial domain.",
+          "• URL contains security/phishing high-risk keywords: [sale]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
       "url": "http://amazon-shop-sale.xyz/",
       "hostname": "amazon-shop-sale.xyz",
       "title": "amazon-shop-sale.xyz",
