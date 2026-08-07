@@ -11,11 +11,9 @@ By combining **Browser Extension DOM Inspection (Manifest V3)**, **Domain Securi
 
 ---
 
-## 📸 Live System Screenshots & Demonstration
+## 📸 Live Extension Working Screenshot
 
-| 🌐 Web Security Dashboard & Threat Sandbox | 🛡️ Extension Popup & AI Security Explainer |
-| :---: | :---: |
-| ![Web Security Dashboard](assets/dashboard_preview.jpg) | ![Extension Popup UI](assets/extension_preview.jpg) |
+![PhishGuard AI Real Extension Screenshot](assets/real_extension_screenshot.png)
 
 ---
 
@@ -100,38 +98,37 @@ By combining **Browser Extension DOM Inspection (Manifest V3)**, **Domain Securi
 
 ```
 browser-scam-detector/
-├── assets/                    # Project screenshots & media assets
-│   ├── dashboard_preview.jpg  # Web Security Dashboard screenshot
-│   └── extension_preview.jpg  # Chrome Extension Popup screenshot
+├── assets/                             # Real working project screenshots
+│   └── real_extension_screenshot.png  # Chrome Extension live working screenshot
 │
-├── extension/                 # Chrome Browser Extension (Manifest V3)
-│   ├── manifest.json          # Extension Manifest configuration
-│   ├── popup.html             # Glassmorphic Extension Popup UI
-│   ├── popup.css              # Dark mode theme styles
-│   ├── popup.js               # Extension frontend logic
-│   ├── content.js             # On-page DOM inspector & link highlighter
-│   ├── content.css            # On-page warning banners & danger link styles
-│   └── background.js          # Service worker tab monitor & badge manager
+├── extension/                          # Chrome Browser Extension (Manifest V3)
+│   ├── manifest.json                   # Extension Manifest configuration
+│   ├── popup.html                      # Glassmorphic Extension Popup UI
+│   ├── popup.css                       # Dark mode theme styles
+│   ├── popup.js                        # Extension frontend logic
+│   ├── content.js                      # On-page DOM inspector & link highlighter
+│   ├── content.css                     # On-page warning banners & danger link styles
+│   └── background.js                   # Service worker tab monitor & badge manager
 │
-├── server/                    # Backend API & Security Analysis Engine
-│   ├── server.js              # REST API server entry point
+├── server/                             # Backend API & Security Analysis Engine
+│   ├── server.js                       # REST API server entry point
 │   ├── services/
-│   │   ├── heuristics.js      # Domain entropy, TLD & brand typo engine
-│   │   ├── ml_classifier.js   # 10-Feature Vector Machine Learning model
-│   │   ├── threat_intelligence.js # VirusTotal & Safe Browsing lookups
-│   │   └── ai_explainer.js    # Gemini AI natural language explainer
+│   │   ├── heuristics.js               # Domain entropy, TLD & brand typo engine
+│   │   ├── ml_classifier.js            # 10-Feature Vector Machine Learning model
+│   │   ├── threat_intelligence.js      # VirusTotal & Safe Browsing lookups
+│   │   └── ai_explainer.js             # Gemini AI natural language explainer
 │   └── db/
-│       └── storage.js         # Scan log persistence & blacklist DB
+│       └── storage.js                  # Scan log persistence & blacklist DB
 │
-├── dashboard/                 # Web Threat Intelligence Dashboard
-│   ├── index.html             # Dashboard Web UI
-│   ├── style.css              # Dashboard styles
-│   └── app.js                 # Dashboard API integrator
+├── dashboard/                          # Web Threat Intelligence Dashboard
+│   ├── index.html                      # Dashboard Web UI
+│   ├── style.css                       # Dashboard styles
+│   └── app.js                          # Dashboard API integrator
 │
-└── test-pages/                # Demonstration Test Pages
-    ├── fake-amazon-store.html         # Simulated clearance sale scam store
-    ├── facebook-phishing-login.html   # Simulated credential phishing page
-    └── legitimate-tech-blog.html      # Blog page for link scanner testing
+└── test-pages/                         # Demonstration Test Pages
+    ├── fake-amazon-store.html          # Simulated clearance sale scam store
+    ├── facebook-phishing-login.html    # Simulated credential phishing page
+    └── legitimate-tech-blog.html       # Blog page for link scanner testing
 ```
 
 ---
