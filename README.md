@@ -11,7 +11,15 @@ By combining **Browser Extension DOM Inspection (Manifest V3)**, **Domain Securi
 
 ---
 
-## 📸 System Overview & Architecture
+## 📸 Live System Screenshots & Demonstration
+
+| 🌐 Web Security Dashboard & Threat Sandbox | 🛡️ Extension Popup & AI Security Explainer |
+| :---: | :---: |
+| ![Web Security Dashboard](assets/dashboard_preview.jpg) | ![Extension Popup UI](assets/extension_preview.jpg) |
+
+---
+
+## 🏗️ System Architecture
 
 ```
                                  ┌─────────────────────────┐
@@ -92,6 +100,10 @@ By combining **Browser Extension DOM Inspection (Manifest V3)**, **Domain Securi
 
 ```
 browser-scam-detector/
+├── assets/                    # Project screenshots & media assets
+│   ├── dashboard_preview.jpg  # Web Security Dashboard screenshot
+│   └── extension_preview.jpg  # Chrome Extension Popup screenshot
+│
 ├── extension/                 # Chrome Browser Extension (Manifest V3)
 │   ├── manifest.json          # Extension Manifest configuration
 │   ├── popup.html             # Glassmorphic Extension Popup UI
@@ -128,8 +140,8 @@ browser-scam-detector/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/browser-scam-detector.git
-cd browser-scam-detector
+git clone https://github.com/sarthakjoshi-tech/phishguard-ai.git
+cd phishguard-ai
 ```
 
 ### 2. Start the Backend API Server
