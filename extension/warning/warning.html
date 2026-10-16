@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard AI - Suspicious Website Warning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0b0f19;
+      color: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow-x: hidden;
+      position: relative;
+    }
+    /* Subtle red danger backdrop glow */
+    body::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.22) 0%, rgba(11, 15, 25, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .warning-card {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      width: 100%;
+      background: rgba(17, 24, 39, 0.85);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: 18px;
+      padding: 36px;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 35px rgba(239, 68, 68, 0.2);
+      animation: fadeInScale 0.3s ease-out;
+    }
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 20px;
+    }
+    .shield-icon {
+      font-size: 44px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: 14px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+    }
+    .title-group h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .risk-badge {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: #ef4444;
+      color: #fff;
+    }
+    .title-group p {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+    .url-block {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .url-block span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    .target-url {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      color: #f87171;
+      word-break: break-all;
+      font-weight: 600;
+    }
+    .ai-box {
+      background: linear-gradient(135deg, rgba(30, 27, 75, 0.6), rgba(88, 28, 135, 0.25));
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .ai-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #c084fc;
+      margin-bottom: 10px;
+    }
+    .ai-summary {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #e2e8f0;
+      margin-bottom: 12px;
+    }
+    .ai-reasons {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .ai-reasons li {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.4;
+      padding-left: 4px;
+    }
+    .ai-recommendation {
+      background: rgba(0, 0, 0, 0.35);
+      border-left: 3px solid #ef4444;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #fca5a5;
+      font-weight: 600;
+    }
+    /* Official Alternative Recommendation */
+    .official-box {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .official-info h3 {
+      font-size: 14px;
+      color: #34d399;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .official-info p {
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .btn-official {
+      background: #059669;
+      color: #ffffff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: background 0.2s ease;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
+    }
+    .btn-official:hover {
+      background: #10b981;
+    }
+    /* Action Buttons */
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .btn-safety {
+      background: #ef4444;
+      color: #ffffff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(239, 68, 68, 0.4);
+      transition: all 0.2s ease;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    .btn-safety:hover {
+      background: #dc2626;
+      transform: translateY(-1px);
+    }
+    .btn-bypass {
+      background: transparent;
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-bypass:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #f1f5f9;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="warning-card">
+    <div class="header">
+      <div class="shield-icon">🛡️</div>
+      <div class="title-group">
+        <h1>PhishGuard AI Warning <span id="risk-badge" class="risk-badge">CRITICAL RISK</span></h1>
+        <p>Pre-Visit Real-Time Scam & Phishing Protection</p>
+      </div>
+    </div>
+
+    <div class="url-block">
+      <span>Suspicious Destination Detected:</span>
+      <div class="target-url" id="target-url">Loading URL...</div>
+    </div>
+
+    <!-- Official Legitimate Recommendation (Shown if Brand Typosquatting detected) -->
+    <div class="official-box" id="official-box" style="display: none;">
+      <div class="official-info">
+        <h3>✨ Legitimate Website Recommendation</h3>
+        <p id="official-text">Did you intend to visit the official website instead?</p>
+      </div>
+      <a href="#" id="btn-official" class="btn-official">Go to Official Site ↗</a>
+    </div>
+
+    <!-- AI Security Explanation -->
+    <div class="ai-box">
+      <div class="ai-header">
+        <span>🤖</span>
+        <span>Gemini AI Pre-Visit Threat Analysis</span>
+      </div>
+      <p class="ai-summary" id="ai-summary">Analyzing domain safety indicators before allowing page load...</p>
+      <ul class="ai-reasons" id="ai-reasons"></ul>
+      <div class="ai-recommendation" id="ai-rec">Recommendation: Do NOT proceed to this domain.</div>
+    </div>
+
+    <div class="actions">
+      <button class="btn-safety" id="btn-back">
+        <span>🛡️</span> Back to Safety (Recommended)
+      </button>
+      <button class="btn-bypass" id="btn-proceed">
+        Proceed Anyway (Unsafe) &rsaquo;
+      </button>
+    </div>
+  </div>
+
+  <script src="warning.js"></script>
+</body>
+</html>

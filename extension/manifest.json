@@ -1,13 +1,14 @@
 {
   "manifest_version": 3,
   "name": "PhishGuard AI - Real-Time Scam & Phishing Detector",
-  "version": "1.0.0",
-  "description": "AI-powered real-time detection of phishing login forms, fake shopping websites, and dangerous links.",
+  "version": "1.1.0",
+  "description": "AI-powered real-time detection of phishing login forms, fake shopping websites, and pre-visit typosquatting prevention.",
   "permissions": [
     "activeTab",
     "scripting",
     "storage",
-    "tabs"
+    "tabs",
+    "webNavigation"
   ],
   "host_permissions": [
     "http://*/*",
@@ -25,7 +26,13 @@
       "matches": ["http://*/*", "https://*/*"],
       "css": ["content.css"],
       "js": ["content.js"],
-      "run_at": "document_idle"
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["warning/warning.html", "warning/warning.js"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

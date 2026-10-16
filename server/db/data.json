@@ -1,6 +1,1304 @@
 {
   "scans": [
     {
+      "url": "https://www.google.com/search?q=test-pages%2Ffacebook-phishing-login.html&oq=test-pages%2Ffacebook-phishing-login.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDrSAQgxMjE0ajBqOagCBLACAfEFyfQ6MQAn8N4&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "test-pages/facebook-phishing-login.html - Google Search",
+      "timestamp": "2026-09-18T04:31:48.856Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [login]."
+        ],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 248,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [login]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffacebook-phishing-login.html&oq=test-pages%2Ffacebook-phishing-login.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDrSAQgxMjE0ajBqOagCBLACAfEFyfQ6MQAn8N4&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-09-18T04:31:38.888Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [login]."
+        ],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 248,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [login]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffacebook-phishing-login.html&oq=test-pages%2Ffacebook-phishing-login.html&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEIMjg3MmowajeoAgiwAgHxBd5LDJD1LF0M&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-09-18T04:31:21.342Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [login]."
+        ],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 237,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [login]."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://fakestoreapi.com/",
+      "hostname": "fakestoreapi.com",
+      "title": "Fake Store API",
+      "timestamp": "2026-09-18T04:30:12.013Z",
+      "score": 92,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 3.25,
+        "hostname": "fakestoreapi.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 25,
+          "hostname_length": 16,
+          "dot_count": 1,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 19,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/fakestoreapi.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "SOCIAL_ENGINEERING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 92,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Threat Intelligence Match: Flagged by 19/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://fakestoreapi.com/",
+      "hostname": "fakestoreapi.com",
+      "title": "fakestoreapi.com",
+      "timestamp": "2026-09-18T04:30:07.483Z",
+      "score": 92,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 3.25,
+        "hostname": "fakestoreapi.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 25,
+          "hostname_length": 16,
+          "dot_count": 1,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 19,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/fakestoreapi.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "SOCIAL_ENGINEERING",
+          "threatType": "SOCIAL_ENGINEERING / PHISHING"
+        },
+        "phishTank": {
+          "status": "VERIFIED_PHISH",
+          "verified": true
+        },
+        "threatLevel": "MALICIOUS"
+      },
+      "aiExplanation": {
+        "compositeScore": 92,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [
+          "• Threat Intelligence Match: Flagged by 19/72 security scanners on VirusTotal."
+        ],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffake-amazon-store.html&oq=test-pages%2Ffake-amazon-store.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOtIBCDM0NzJqMGo5qAIFsAIB8QXidSC29w2KaA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "test-pages/fake-amazon-store.html - Google Search",
+      "timestamp": "2026-09-18T04:29:25.480Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 247,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffake-amazon-store.html&oq=test-pages%2Ffake-amazon-store.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOtIBCDM0NzJqMGo5qAIFsAIB8QXidSC29w2KaA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "test-pages/fake-amazon-store.html - Google Search",
+      "timestamp": "2026-09-18T04:29:10.965Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 247,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffake-amazon-store.html&oq=test-pages%2Ffake-amazon-store.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOtIBCDM0NzJqMGo5qAIFsAIB8QXidSC29w2KaA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-09-18T04:29:04.936Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 247,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffake-amazon-store.html&oq=test-pages%2Ffake-amazon-store.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOtIBCDM5ODhqMGo3qAIIsAIB8QVqN1mlmkkcfg&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "test-pages/fake-amazon-store.html - Google Search",
+      "timestamp": "2026-09-18T04:28:36.351Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 247,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=test-pages%2Ffake-amazon-store.html&oq=test-pages%2Ffake-amazon-store.html&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOtIBCDM5ODhqMGo3qAIIsAIB8QVqN1mlmkkcfg&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-09-18T04:28:22.484Z",
+      "score": 82,
+      "riskRating": "CRITICAL",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 82,
+        "confidenceRating": "High Phishing Probability",
+        "featuresExtracted": {
+          "url_length": 247,
+          "hostname_length": 14,
+          "dot_count": 5,
+          "hyphen_count": 0,
+          "symbol_count": 15,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-09-18",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 82,
+        "riskRating": "CRITICAL",
+        "summary": "⚠️ DANGER: High-confidence phishing or scam website detected. Entering passwords, credentials, or credit card info on this domain poses an immediate security threat.",
+        "keyReasons": [],
+        "recommendation": "Do NOT enter any personal details, passwords, or payment cards. Close this tab immediately.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://web.whatsapp.com/",
+      "hostname": "web.whatsapp.com",
+      "title": "web.whatsapp.com",
+      "timestamp": "2026-08-09T06:19:11.857Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.5,
+        "hostname": "web.whatsapp.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 25,
+          "hostname_length": 16,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/web.whatsapp.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=whatsapp+web&oq=whats&gs_lcrp=EgZjaHJvbWUqEggCEAAYQxiDARixAxiABBiKBTIGCAAQRRg5MhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg0IBBAAGIMBGLEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDwgGEAAYQxixAxiABBiKBTIGCAcQBRhA0gEIMzIwMWowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "whatsapp web - Google Search",
+      "timestamp": "2026-08-09T06:18:55.790Z",
+      "score": 52,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 52,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 343,
+          "hostname_length": 14,
+          "dot_count": 3,
+          "hyphen_count": 0,
+          "symbol_count": 13,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 52,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=whatsapp+web&oq=whats&gs_lcrp=EgZjaHJvbWUqEggCEAAYQxiDARixAxiABBiKBTIGCAAQRRg5MhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg0IBBAAGIMBGLEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDwgGEAAYQxixAxiABBiKBTIGCAcQBRhA0gEIMzIwMWowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-08-09T06:18:51.291Z",
+      "score": 52,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 52,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 343,
+          "hostname_length": 14,
+          "dot_count": 3,
+          "hyphen_count": 0,
+          "symbol_count": 13,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 52,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research/cyber-intelligence-graphrags-behavioral-detection",
+      "hostname": "www.sans.edu",
+      "title": "www.sans.edu",
+      "timestamp": "2026-08-09T06:18:12.192Z",
+      "score": 12,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 12,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 85,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 12,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (12% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research/network-artifacts-of-trusted-service-abuse",
+      "hostname": "www.sans.edu",
+      "title": "www.sans.edu",
+      "timestamp": "2026-08-09T06:18:03.261Z",
+      "score": 12,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 12,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 78,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 12,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (12% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research",
+      "hostname": "www.sans.edu",
+      "title": "www.sans.edu",
+      "timestamp": "2026-08-09T06:17:50.997Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 35,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.google.com/search?q=cybersecurity+research+papers&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQkxODU0ajBqMTWoAgiwAgHxBdVDkn_AygSu&sourceid=chrome&source=chrome.rb&ie=UTF-8",
+      "hostname": "www.google.com",
+      "title": "www.google.com",
+      "timestamp": "2026-08-09T06:17:47.561Z",
+      "score": 52,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 10,
+        "flags": [
+          "URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "entropy": 1.92,
+        "hostname": "www.google.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 52,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 296,
+          "hostname_length": 14,
+          "dot_count": 3,
+          "hyphen_count": 0,
+          "symbol_count": 14,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.google.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 52,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [
+          "• URL contains security/phishing high-risk keywords: [security]."
+        ],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "file:///C:/Users/sarth/Downloads/SANS-Cyber-Intelligence-GraphRAGs-Behavioral-Detection-070926.pdf",
+      "hostname": "file:///C:/Users/sarth/Downloads/SANS-Cyber-Intelligence-GraphRAGs-Behavioral-Detection-070926.pdf",
+      "title": "rob_heald",
+      "timestamp": "2026-08-09T06:16:54.614Z",
+      "score": 50,
+      "riskRating": "MEDIUM",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 0,
+        "hostname": "",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 50,
+        "confidenceRating": "Moderate Scam Probability",
+        "featuresExtracted": {
+          "url_length": 98,
+          "hostname_length": 98,
+          "dot_count": 1,
+          "hyphen_count": 6,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 0
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/file%3A%2F%2F%2FC%3A%2FUsers%2Fsarth%2FDownloads%2FSANS-Cyber-Intelligence-GraphRAGs-Behavioral-Detection-070926.pdf"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 50,
+        "riskRating": "MEDIUM",
+        "summary": "⚡ WARNING: Suspicious domain activity observed. Proceed with caution and verify the exact web address before interacting.",
+        "keyReasons": [],
+        "recommendation": "Verify the official URL of the organization before logging in or making transactions.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://sansorg.egnyte.com/dl/WfgV8HQQKtcP",
+      "hostname": "sansorg.egnyte.com",
+      "title": "sansorg.egnyte.com",
+      "timestamp": "2026-08-09T06:15:57.370Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 2.25,
+        "hostname": "sansorg.egnyte.com",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 42,
+          "hostname_length": 18,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/sansorg.egnyte.com"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research/cyber-intelligence-graphrags-behavioral-detection",
+      "hostname": "www.sans.edu",
+      "title": "Cyber Intelligence GraphRAGs for Behavioral Detection | SANS Institute",
+      "timestamp": "2026-08-09T06:14:51.263Z",
+      "score": 12,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 12,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 85,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 1,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 12,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (12% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research/cyber-intelligence-graphrags-behavioral-detection",
+      "hostname": "www.sans.edu",
+      "title": "www.sans.edu",
+      "timestamp": "2026-08-09T06:14:44.156Z",
+      "score": 12,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 12,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 85,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 12,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (12% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
+      "url": "https://www.sans.edu/cyber-research",
+      "hostname": "www.sans.edu",
+      "title": "www.sans.edu",
+      "timestamp": "2026-08-09T06:14:31.113Z",
+      "score": 4,
+      "riskRating": "SAFE",
+      "heuristics": {
+        "score": 0,
+        "flags": [],
+        "entropy": 1.5,
+        "hostname": "www.sans.edu",
+        "brandSpoofed": null
+      },
+      "mlClassification": {
+        "phishingProbability": 4,
+        "confidenceRating": "Low Probability",
+        "featuresExtracted": {
+          "url_length": 35,
+          "hostname_length": 12,
+          "dot_count": 2,
+          "hyphen_count": 0,
+          "symbol_count": 0,
+          "is_ip": 0,
+          "high_risk_tld": 0,
+          "has_login_form": 0,
+          "has_fake_shop_cues": 0,
+          "is_https": 1
+        },
+        "modelName": "PhishGuard-RF-v1.2 (Ensemble Classifier)"
+      },
+      "threatIntel": {
+        "virusTotal": {
+          "positives": 0,
+          "total": 72,
+          "scanDate": "2026-08-09",
+          "permalink": "https://www.virustotal.com/gui/search/www.sans.edu"
+        },
+        "googleSafeBrowsing": {
+          "status": "CLEAN",
+          "threatType": "NONE"
+        },
+        "phishTank": {
+          "status": "NOT_FOUND",
+          "verified": false
+        },
+        "threatLevel": "SAFE"
+      },
+      "aiExplanation": {
+        "compositeScore": 4,
+        "riskRating": "SAFE",
+        "summary": "✅ SAFE: No malicious patterns, brand spoofing, or active threat intelligence flags were detected for this domain.",
+        "keyReasons": [
+          "• Valid connection and legitimate domain metrics.",
+          "• Passed ML Phishing classification check (4% risk index)."
+        ],
+        "recommendation": "This website appears safe for normal browsing.",
+        "aiModel": "Gemini-CyberShield-AI v2.4"
+      }
+    },
+    {
       "url": "https://www.researchgate.net/publication/260126665_A_Study_Of_Cyber_Security_Challenges_And_Its_Emerging_Trends_On_Latest_Technologies?__cf_chl_tk=3Shuyt4lEXWvDuK9u4TNpW.XBZO3k.tJo5HvMgMNcgg-1786039588-1.0.1.1-Ifwlbly4PYKT_FSg_8N0PGngS33mCJS3fkYTw94lXl4",
       "hostname": "www.researchgate.net",
       "title": "(PDF) A Study Of Cyber Security Challenges And Its Emerging Trends On Latest Technologies",
