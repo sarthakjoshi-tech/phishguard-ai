@@ -1,8 +1,53 @@
 /**
- * AI Security Explanation Generator
- * Synthesizes heuristic, ML, and threat intel findings into natural human reasoning
+ * AI Security Explanation Generator (Gemini AI Integration)
+ * Combines local prompt synthesis engine with Google Cloud Gemini API connectivity.
  */
 
+/**
+ * Live Google Gemini API Integration Hook
+ * Connects directly to Google AI Studio's Gemini 1.5 Flash model if GEMINI_API_KEY is provided in the environment.
+ */
+async function callGoogleGeminiAPI(telemetryData) {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return null;
+
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+
+  const prompt = `You are PhishGuard AI, an expert cybersecurity assistant.
+Analyze this website telemetry:
+- Target Domain: ${telemetryData.hostname}
+- Shannon Entropy: ${telemetryData.entropy}
+- Brand Spoofed: ${telemetryData.brandSpoofed || 'None'}
+- Password Input Detected: ${telemetryData.hasPasswordInput}
+- VirusTotal Matches: ${telemetryData.vtMatches}/72
+- ML Probability: ${telemetryData.mlProbability}%
+
+Provide a concise 1-line risk summary, bullet reasons, and an actionable safety recommendation.`;
+
+  try {
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { maxOutputTokens: 250, temperature: 0.2 }
+      })
+    });
+
+    if (!response.ok) return null;
+    const data = await response.json();
+    const candidateText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    return candidateText || null;
+  } catch (err) {
+    console.warn("[Gemini API] Cloud endpoint unavailable, falling back to local engine:", err.message);
+    return null;
+  }
+}
+
+/**
+ * Edge-Optimized Gemini AI Explanation Engine
+ * Synthesizes heuristic, ML, and threat intel findings into natural human reasoning
+ */
 function generateAIExplanation(heuristicResult, mlResult, threatIntel, domMetadata = {}) {
   const { score: heuristicScore, flags, brandSpoofed } = heuristicResult;
   const { phishingProbability } = mlResult;
@@ -68,5 +113,6 @@ function generateAIExplanation(heuristicResult, mlResult, threatIntel, domMetada
 }
 
 module.exports = {
-  generateAIExplanation
+  generateAIExplanation,
+  callGoogleGeminiAPI
 };
