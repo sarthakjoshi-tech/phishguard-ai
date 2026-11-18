@@ -20,3 +20,7 @@ Thumbs.db
 # Scratch & build cache
 scratch/
 .cache/
+
+__pycache__/
+*.pyc
+
