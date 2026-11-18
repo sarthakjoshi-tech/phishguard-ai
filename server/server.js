@@ -6,6 +6,7 @@
 const http = require('http');
 const url = require('url');
 const path = require('path');
+const fs = require('fs');
 
 const { analyzeHeuristics } = require('./services/heuristics');
 const { classifyPhishing } = require('./services/ml_classifier');
@@ -56,6 +57,30 @@ const server = http.createServer(async (req, res) => {
   }
 
   try {
+    // 0. Serve Static Web Dashboard UI
+    const DASHBOARD_DIR = path.join(__dirname, '..', 'dashboard');
+    if ((pathname === '/' || pathname === '/dashboard' || pathname === '/dashboard/' || pathname === '/index.html') && method === 'GET') {
+      const htmlPath = path.join(DASHBOARD_DIR, 'index.html');
+      const htmlContent = fs.readFileSync(htmlPath, 'utf8');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(htmlContent);
+      return;
+    }
+    if ((pathname === '/style.css' || pathname === '/dashboard/style.css') && method === 'GET') {
+      const cssPath = path.join(DASHBOARD_DIR, 'style.css');
+      const cssContent = fs.readFileSync(cssPath, 'utf8');
+      res.writeHead(200, { 'Content-Type': 'text/css' });
+      res.end(cssContent);
+      return;
+    }
+    if ((pathname === '/app.js' || pathname === '/dashboard/app.js') && method === 'GET') {
+      const jsPath = path.join(DASHBOARD_DIR, 'app.js');
+      const jsContent = fs.readFileSync(jsPath, 'utf8');
+      res.writeHead(200, { 'Content-Type': 'application/javascript' });
+      res.end(jsContent);
+      return;
+    }
+
     // 1. Health Check
     if (pathname === '/api/health' && method === 'GET') {
       res.writeHead(200, CORS_HEADERS);

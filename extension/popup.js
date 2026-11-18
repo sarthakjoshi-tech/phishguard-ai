@@ -178,6 +178,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Action Listeners
   document.getElementById('btn-rescan').addEventListener('click', () => performScan());
 
+  const openDashboardLink = document.getElementById('open-dashboard-link');
+  if (openDashboardLink) {
+    openDashboardLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      chrome.tabs.create({ url: "http://localhost:5000" });
+    });
+  }
+
   document.getElementById('btn-highlight').addEventListener('click', () => {
     chrome.tabs.sendMessage(activeTab.id, { action: "HIGHLIGHT_LINKS" });
   });
